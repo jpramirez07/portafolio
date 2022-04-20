@@ -1,0 +1,535 @@
+html{
+    font-family: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.home{
+    width: auto;
+    height: 100vh;
+    background-color: #1F1D2C;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    height: 93px;
+    position: relative;
+    z-index: 3;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+input#menu-hamburguesa ~ ul{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 93px);
+    top: 93px;
+    right: 100%;
+    transition: all 300ms linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    right: 0;
+}
+
+.menu a:hover{
+    background-color: #1F1D2C;
+    color: #F1A600;
+}
+
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+}
+
+h1{
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 50px;
+    margin: 0 auto;
+    width: 80vw;
+    position: relative;
+}
+
+.info-content p{
+    color: #FFFFFF;
+    margin-top: 1rem;
+    font-size: 32px;
+    position: relative;
+    z-index: 5;
+}
+
+.info-content p span{
+    color: #F1A600;
+}
+
+.main img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    right: 1rem;
+    z-index: 3;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.iconos li{
+    list-style: none;
+    padding: 1rem;   
+}
+
+.vector-1{
+    position: absolute;
+    right: 0;
+    height: 455px;
+    width: 375px;
+}
+
+.vector-2{
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+
+.header{
+    position: relative;
+}
+
+.Acerca-de-mi{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #242635;
+    align-items: center;
+}
+
+.Acerca-de-mi h2{
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 32px;
+}
+
+.Acerca-de-mi p{
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.imagenes{
+    display: grid;
+    list-style: none;
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+    color: #FFFFFF;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.vacio{
+    width: 5rem;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.texto{
+    text-align: center;
+    font-size: 16px;
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #1F1D2C;
+    padding: 2rem;
+    position: relative;
+}
+
+.experiencia h2{
+    display: flex;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    justify-content: center;
+    position: relative;
+    font-size: 32px;
+}
+
+.experiencia ul{
+    display: grid;
+    list-style: none;
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+    color: #FFFFFF;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.barra-experiencia{
+    position: absolute;
+    right: 2rem;
+    top: 7rem;
+}
+
+.años-experiencia{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sub-exp{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info-exp{
+    font-size: 18px;
+}
+
+.mis-habilidades{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #1F1D2C;
+    padding: 1rem;
+    position: relative;
+    font-weight: 600;
+}
+
+.mis-habilidades h2{
+    display: flex;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    justify-content: center;
+    position: relative;
+    font-size: 32px;
+}
+
+.mis-habilidades ul{
+    display: grid;
+    list-style: none;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+    color: #FFFFFF;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    left: 7rem;
+    margin-right: 9rem;
+}
+
+.porcentajes-hab{
+    color: #F1A600;
+    font-size: 32px;
+}
+
+.info-hab{
+    font-size: 16px;
+}
+
+.vector-3{
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    visibility: hidden;
+}
+
+.vector-4{
+    position: absolute;
+    top: 0;
+    left: -2rem;
+}
+
+.mi-portafolio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #1F1D2C;
+    padding: 1rem;
+    position: relative;
+}
+
+.mi-portafolio ul{
+    list-style: none;
+    color: #FFFFFF;
+    position: relative;
+    padding: 1rem;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.imagenes-port{
+    width: 250px;
+    height: 200px;
+}
+
+.mi-portafolio h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+.img-1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img-2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img-3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.parrafo-1{
+    margin-top: .5rem;
+}
+
+.parrafo-2{
+    margin-right: 5.5rem;
+    margin-top: .5rem;
+}
+
+.parrafo-3{
+    margin-top: .5rem;
+}
+
+.caja-ama1{
+    position: absolute;
+    width: 270px;
+    height: 200px;
+    background-color: #F1A600;
+    z-index: 1;
+    left: 1.3rem;
+    top: 5rem;
+}
+
+.caja-gris{
+    position: absolute;
+    width: 270px;
+    height: 200px;
+    background-color: #242635;
+    z-index: 1;
+    left: 17.9rem;
+    top: 20.8rem;
+}
+
+.caja-ama2{
+    position: absolute;
+    width: 270px;
+    height: 200px;
+    background-color: #F1A600;
+    z-index: 1;
+    left: 1.3rem;
+    top: 35.7rem;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #242635;
+    position: relative;
+}
+
+.contacto h2{
+    text-align: center;
+    padding: 1rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.lista-contact{
+    list-style: none;
+    color: #FFFFFF;
+    position: relative;
+    padding: 1rem;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 3rem;
+}
+
+.telefono{
+    position: relative;
+    text-align: center;
+}
+
+.email{
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.imgs-contact{
+    margin-bottom: 2rem;
+}
+
+.sub-contact{
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+@media only screen and (min-width: 768px){
+    label{
+        display: none;
+    }
+
+    input#menu-hamburguesa ~ ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+    }
+    
+    .vacio{
+        width: 10rem;
+    }
+
+    h1{
+        font-size: 150px;
+    }
+
+    .info-content p{
+        font-size: 50px;
+        width: 800px;
+    }
+
+    .vector-1{
+        visibility: hidden;
+    }
+
+    .vector-2{
+        visibility: visible;
+    }
+
+    .main img{
+        width: 500px;
+        height: 420px;
+        right: 210px;
+    }
+
+    .Acerca-de-mi p{
+        font-size: 18px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .Acerca-de-mi h2{
+        font-size: 50px;
+    }
+
+    .subtitulo{
+        font-size: 20px;
+    }
+
+    .experiencia ul{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .barra-experiencia{
+        right: 25rem;
+    }
+
+    .mis-habilidades ul{
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 30%;
+        gap: 2rem;
+    }
+
+    .mis-habilidades h2{
+        margin-left: 0;
+        margin-right: 31%;
+    }
+
+    .vector-3{
+        visibility: visible;
+    }
+
+    .vector-4{
+        visibility: hidden;
+    }
+    
+    .img-1{
+        margin-left: 20rem;
+    }
+
+    .img-2{
+        margin-left: 50rem;
+    }
+
+    .img-3{
+        margin-left: 20rem;
+    }
+
+    .caja-ama1{
+        left: 21.35rem;
+    }
+
+    .caja-gris{
+        left: 51.35rem;
+    }
+
+    .caja-ama2{
+        left: 21.35rem;
+    }
+
+    .lista-contact{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .sub-contact{
+        font-size: 18px;
+    }
+}
