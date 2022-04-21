@@ -159,6 +159,15 @@ h1{
     margin-bottom: 3rem;
 }
 
+.udea{
+    position: relative;
+    display: flex;
+    height: 140px;
+    width: 140px;
+    top: 2rem;
+    right: 2.5rem;
+}
+
 .vacio{
     width: 5rem;
 }
