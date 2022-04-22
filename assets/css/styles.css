@@ -42,13 +42,13 @@ input#menu-hamburguesa{
 input#menu-hamburguesa ~ ul{
     position: absolute;
     width: 100%;
-    height: calc(100vh - 93px);
+    height: 50vh;
     top: 93px;
     right: 100%;
     transition: all 300ms linear;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 1rem;
 }
 
 input#menu-hamburguesa:checked ~ ul{
