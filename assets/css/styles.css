@@ -152,7 +152,6 @@ h1{
     grid-template-columns: auto auto auto;
     color: #FFFFFF;
     margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 
 .udea{
@@ -160,23 +159,59 @@ h1{
     display: flex;
     height: 140px;
     width: 140px;
-    top: 2rem;
-    right: 2.5rem;
+}
+
+.academlo{
+    position: relative;
+    display: flex;
+    height: 250px;
+    width: 250px;
+    top: -3rem;
 }
 
 .vacio{
     width: 5rem;
+    height: 1px;
 }
 
-.subtitulo{
+.subtitulo-UdeA{
     text-align: center;
     font-weight: 600;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-left: 4rem;
+    position: relative;
+    bottom: 5rem;
 }
 
-.texto{
+.subtitulo-Academlo{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5rem;
+}
+
+.texto-UdeA{
     text-align: center;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-left: 4rem;
+    position: relative;
+    bottom: 5rem;
+}
+
+.texto-Academlo{
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5rem;
 }
 
 .experiencia{
